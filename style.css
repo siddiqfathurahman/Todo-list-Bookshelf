@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  justify-content: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+ header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  section {
+    background: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #incompleteBookList,
+  #completeBookList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  [data-testid="bookItem"] {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  [data-testid="bookItem"] div {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  [data-testid="bookItem"] button {
+    flex: 1;
+    padding: 8px;
+  }
+
+  [data-testid="bookItemIsCompleteButton"] {
+    background-color: #28a745; 
+  }
+
+  [data-testid="bookItemIsCompleteButton"]:hover {
+    background-color: #218838;
+  }
+
+  [data-testid="bookItemDeleteButton"] {
+    background-color: #dc3545; 
+  }
+
+  [data-testid="bookItemDeleteButton"]:hover {
+    background-color: #c82333;
+  }
